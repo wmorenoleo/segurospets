@@ -372,7 +372,7 @@ body {
 }
 
 .master--view {
-  background-image: url(images/fondo.svg);
+  background-image: url(../images/fondo.svg);
   background-repeat: repeat;
   background-size: 566px 426px;
 }
@@ -410,13 +410,13 @@ body {
   font-size: 3.1rem;
 }
 .slider-text h1 strong::before {
-  content: url(/images/huellas.png);
+  content: url(../images/huellas.png);
   position: relative;
   top: 8px;
   margin-right: 11px;
 }
 .slider-text h1 strong::after {
-  content: url(/images/huellas.png);
+  content: url(../images/huellas.png);
   position: relative;
   top: 8px;
   margin-left: 11px;
@@ -445,23 +445,23 @@ body {
 }
 
 .bg-image1 {
-  background: url(/images/background1.png);
+  background: url(../images/background1.png);
 }
 
 .bg-image2 {
-  background: url(/images/background2.png);
+  background: url(../images/background2.png);
 }
 
 .bg-image3 {
-  background: url(/images/background3.png);
+  background: url(../images/background3.png);
 }
 
 .bg-image4 {
-  background: url(/images/huellasbg.svg);
+  background: url(../images/huellasbg.svg);
 }
 
 .bg-image5 {
-  background: url(/images/backgris.png);
+  background: url(../images/backgris.png);
 }
 
 .background {
@@ -494,11 +494,11 @@ body {
 }
 
 .carousel-control-prev-icon {
-  background-image: url(/images/arrowleft.svg);
+  background-image: url(../images/arrowleft.svg);
 }
 
 .carousel-control-next-icon {
-  background-image: url(/images/arrowright.svg);
+  background-image: url(../images/arrowright.svg);
 }
 
 .carousel-control-next-icon, .carousel-control-prev-icon {
