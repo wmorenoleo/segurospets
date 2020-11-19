@@ -1,0 +1,678 @@
+@charset "UTF-8";
+/*Generales*/
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #686868;
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+}
+
+#headerHero {
+  background-image: url(../images/200317-229-rappi-bienvenida-mascotas-headergold.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 150px;
+  max-height: 500px;
+}
+
+.img-centrado-general {
+  display: block;
+  margin: 0 auto;
+}
+
+/*header*/
+.container-logo {
+  width: 40%;
+  margin: 0 auto;
+  padding: 1rem 0;
+}
+
+/*titulo*/
+h1 {
+  font-weight: 800;
+  font-size: 2rem;
+  line-height: 1.2;
+  color: #016d38;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.comp-h1 {
+  font-weight: 300;
+  color: #686868;
+  text-transform: initial;
+}
+
+.contenedor-h1 {
+  background-color: #ffffffc0;
+  border-radius: 60px 60px 60px 60px;
+  -moz-border-radius: 60px 60px 60px 60px;
+  -webkit-border-radius: 60px 60px 60px 60px;
+  border: 0px solid #00000000;
+  padding: 0px 30px;
+}
+
+.contenedor-titulo-general {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -25px;
+}
+
+.huellas-header {
+  width: 80%;
+}
+
+/*INICIO Texto lead*/
+.texto-lead {
+  margin-top: 25px;
+  padding: 20px;
+  border-top: 2px solid #ffdc5d;
+}
+
+.texto-lead-resaltado {
+  color: #016d38;
+  font-style: italic;
+  font-weight: 800;
+}
+
+/*---------------------------Estrellas--------------------------------*/
+.califique {
+  font-size: 20px;
+  color: #016d38;
+  font-style: italic;
+  font-weight: bold;
+  margin-bottom: 0 !important;
+  margin-top: 15px;
+  margin-right: 20px;
+}
+
+.inbl {
+  display: inline-block;
+}
+
+.ec-stars-wrapper {
+  /* Espacio entre los inline-block (los hijos, los `a`) http:ksesocss.blogspot.com/2012/03/display-inline-block-y-sus-empeno-en.html */
+  font-size: 20;
+  /* PodrÃ­amos quitarlo, pero de esta manera (siempre que no le demos padding), solo aplicara la regla .ec-stars-wrapper:hover a cuando también se está haciendo hover a alguna estrella */
+  display: inline-block;
+}
+
+.ec-stars-wrapper a {
+  text-decoration: none;
+  display: inline-block;
+  /* Volver a dar tamaÃ±o al texto */
+  font-size: 32px;
+  font-size: 3rem;
+  color: #e0e0e0;
+}
+
+.ec-stars-wrapper:hover a {
+  color: #ffdc5d;
+}
+
+/* El selector de hijo, es necesario para aumentar la especifidad*/
+.ec-stars-wrapper > a:hover ~ a {
+  color: #e0e0e0;
+}
+
+.calificacion {
+  margin: 0 auto;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  vertical-align: middle;
+  padding-bottom: 50px;
+  padding-top: 10px;
+  background-position: right;
+  background-size: 100%;
+  margin-bottom: 30px;
+}
+
+/*--------------Fin Estrellas------------------ */
+/*bg estrellas*/
+/* #bg-estrellas {
+    background-image: url(../images/200317-229-rappi-bienvenida-mascotas-huellasfooter.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+} */
+/*vigilado*/
+.vigilado {
+  position: absolute;
+  top: 30px;
+  left: 10px;
+}
+
+/*footer*/
+.texto-footer {
+  background-color: #eaeaea;
+  padding: 2rem 0;
+  color: #686868;
+  overflow: hidden;
+}
+
+@media (min-width: 425px) {
+  /*Footer*/
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .legal-header {
+    top: 175px;
+  }
+
+  #headerHero {
+    height: 250px;
+  }
+}
+@media (min-width: 768px) {
+  .container-logo {
+    width: 30%;
+    margin: 0 auto;
+    padding: 1rem 0;
+  }
+
+  .contenedor-titulo-general {
+    flex-direction: row;
+    justify-content: center;
+    margin-top: -40px;
+  }
+
+  .contenedor-h1 {
+    padding-top: 10px;
+  }
+
+  .huellas-header {
+    width: 25%;
+  }
+
+  .legal-header {
+    top: 168px;
+  }
+
+  #bg-verde {
+    background-position: center center;
+  }
+
+  .perro-gato {
+    position: absolute;
+    top: 56px;
+    width: 40%;
+    z-index: 3;
+  }
+
+  ul.nav-pills {
+    display: flex;
+    justify-content: center;
+  }
+
+  ul {
+    margin-bottom: 0;
+  }
+
+  .nav-item {
+    margin-top: 144px;
+  }
+
+  li.nav-item a.nav-link {
+    width: 300px;
+  }
+
+  .contenedor-retros-tabs {
+    border: 1px solid #016d38;
+    border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    padding: 30px;
+    background-color: #ffffff;
+  }
+
+  .iconos-retros {
+    padding: 20px;
+    width: 300px;
+  }
+
+  .container-tabs {
+    margin-top: -40px;
+  }
+
+  .container-retros-tabs {
+    margin-top: -8px;
+  }
+
+  .contenedor-retros-tabs ul.huesos {
+    list-style-image: url("../images/200317-229-rappi-bienvenida-mascotas-bulletshueso.png");
+  }
+
+  .btn-retros-tabs {
+    border: 1px solid #686868;
+    background-color: #ffffff;
+  }
+
+  .btn-retros-tabs.active img {
+    filter: brightness(300%);
+  }
+
+  .seccion-verde {
+    padding: 1rem;
+  }
+}
+@media (min-width: 992px) {
+  .perro-gato {
+    top: 57px;
+    width: 30%;
+  }
+
+  .cards-gris .text-primary {
+    flex-grow: 1;
+  }
+}
+@media (min-width: 1024px) {
+  .perro-gato {
+    top: 70px;
+    width: 260px;
+  }
+}
+@media (min-width: 1220px) {
+  #headerHero {
+    height: 330px;
+  }
+
+  .legal-header {
+    top: 208px;
+  }
+}
+@media (min-width: 2000px) {
+  #headerHero {
+    height: 610px;
+  }
+
+  .legal-header {
+    top: 293px;
+  }
+}
+:root {
+  font-size: 18px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 1.125rem;
+}
+
+.bfix {
+  border: 1px solid red;
+}
+
+.h2 {
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.h3 {
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+.strong {
+  font-weight: 600;
+}
+
+.text {
+  font-weight: 300;
+  font-size: 1.125rem;
+}
+
+.verde {
+  color: #016d38;
+}
+
+.amarillo {
+  color: #FFDC5D;
+}
+
+.gris {
+  color: #5F6060;
+}
+
+.blanco {
+  color: #ffffff;
+}
+
+.bg-verde {
+  background-color: #016d38;
+}
+
+.bg-amarillo {
+  background-color: #FFDC5D;
+}
+
+.bg-blanco {
+  background-color: #ffffff;
+}
+
+.gap-1 {
+  padding: 1.2rem 0rem;
+}
+
+.master--view {
+  background-image: url(../images/fondo.svg);
+  background-repeat: repeat;
+  background-size: 566px 426px;
+}
+
+.header {
+  padding: 1.5rem;
+}
+.header img {
+  width: 150px;
+}
+
+.legal-header {
+  position: absolute;
+  right: 0;
+  top: 200px;
+  width: 100%;
+  margin-right: 8px;
+}
+
+.slider--img img {
+  width: 100%;
+}
+
+.slider-text {
+  text-align: center;
+}
+.slider-text h1 {
+  color: #5F6060;
+  font-size: 2.8rem;
+  font-weight: 300;
+}
+.slider-text h1 strong {
+  color: #016d38;
+  font-weight: 700;
+  font-size: 3.1rem;
+}
+.slider-text h1 strong::before {
+  content: url(../images/huellassilver.svg);
+  display: inline-block;
+  width: 150px;
+  position: relative;
+  top: 8px;
+  margin-right: 11px;
+}
+.slider-text h1 strong::after {
+  content: url(../images/huellassilver.svg);
+  display: inline-block;
+  width: 150px;
+  position: relative;
+  top: 8px;
+  margin-left: 10px;
+}
+.slider-text h1 span {
+  color: #FFDC5D;
+}
+.slider-text hr {
+  border-top: 1px solid #016d38;
+  width: 80%;
+}
+.slider-text p {
+  color: #5F6060;
+}
+.slider-text p span {
+  font-weight: 600;
+}
+
+.legal {
+  color: #5F6060;
+  font-size: 12px;
+  position: absolute;
+  transform: rotate(90deg);
+  right: -50px;
+  top: 10%;
+}
+
+.bg-image1 {
+  background: url(../images/background1.png);
+}
+
+.bg-image2 {
+  background: url(../images/background2.png);
+}
+
+.bg-image3 {
+  background: url(../images/background3.png);
+}
+
+.bg-image4 {
+  background: url(../images/huellasbg.svg);
+}
+
+.bg-image5 {
+  background: url(../images/backgris.png);
+}
+
+.background {
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 1.5rem;
+}
+.background p {
+  margin: 0;
+}
+
+.carousell {
+  padding: 1.5rem 1rem;
+}
+.carousell p {
+  margin: 0;
+  color: #5F6060;
+}
+
+.carrousell-indicators {
+  position: initial;
+}
+
+.carrousell-text {
+  position: initial;
+}
+
+.carousel-control-next, .carousel-control-prev {
+  opacity: 1;
+}
+
+.carousel-control-prev-icon {
+  background-image: url(../images/arrowleft.svg);
+}
+
+.carousel-control-next-icon {
+  background-image: url(../images/arrowright.svg);
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.carousel-indicators li {
+  background-color: #5F6060;
+  opacity: 0.2;
+}
+
+.carousel-indicators .active {
+  background-color: #016d38;
+}
+
+.box--text {
+  color: #ffffff;
+  padding: 0rem 0rem;
+}
+.box--text p {
+  font-size: 1.125rem;
+  font-weight: 300;
+}
+
+.franja-boton {
+  display: flex;
+  padding: 1.5rem;
+  border-radius: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+.franja-boton img {
+  width: 55px;
+}
+.franja-boton a {
+  border: 1px solid #716122;
+  border-radius: 23px;
+  padding: 0.8rem;
+  color: #716122;
+  font-weight: 600;
+  font-size: 1.125rem;
+}
+
+.hr-amarillo {
+  border-top: 1px solid #FFDC5D;
+}
+
+.ct3-item {
+  padding: 1rem 2rem;
+}
+
+.content {
+  padding: 2.5rem;
+}
+
+.header-acordeon {
+  background-color: #FFDC5D;
+  font-size: 1.25rem;
+  font-weight: 600;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+}
+.header-acordeon a {
+  color: #016d38;
+  text-decoration: none;
+}
+.header-acordeon img {
+  width: 1.2rem;
+}
+
+.acordeon-content p {
+  padding: 1.2rem;
+  font-weight: 300;
+}
+.acordeon-content strong {
+  font-weight: 600;
+}
+
+.recuadros {
+  background-image: url(../images/200317-229-rappi-bienvenida-mascotas-fondocurvo.png);
+  background-size: 100% 300px;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.box--recuadros {
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.recuadro-item {
+  background-color: #ffffff;
+  border: 1px solid #eaeaea;
+  border-radius: 7px;
+  box-shadow: 9px 9px 8px -4px rgba(0, 0, 0, 0.12);
+  padding: 1.2rem;
+  margin-top: 10px;
+  height: 320px;
+  color: #5F6060;
+  font-weight: 400;
+  font-size: 1rem;
+}
+.recuadro-item img {
+  margin-bottom: 1rem;
+  width: 80px;
+}
+
+/* Recuadro verde */
+#bg-verde {
+  padding: 1.2rem;
+  background-image: url(../images/200317-229-rappi-bienvenida-mascotas-seccioverde.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+h2.titulo-seccion-verde {
+  font-size: 2rem;
+  color: #ffdc5d;
+  padding: 20px 20px 5px;
+  font-style: italic;
+  font-weight: 600;
+}
+
+.numero-grande {
+  font-size: 3rem;
+  font-style: italic;
+  color: #ffffff;
+  text-align: center;
+  margin-top: -5px;
+}
+
+.numero-grande:hover {
+  color: #ffdc5d;
+  text-decoration: none;
+}
+
+/* Recuadro verde */
+/* Botones Tabs Perro Gato */
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #016d38;
+}
+
+.nav-item a {
+  color: #016d38;
+}
+
+.text-verde {
+  color: #016d38;
+}
+
+.btn-whatsapp {
+  margin: 2rem 2rem;
+}
+.btn-whatsapp a {
+  width: 10rem;
+  background-color: #FFDC5D;
+  border-radius: 15px;
+  padding: 0.5rem 2rem;
+  color: #016d38;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.link-bolivar:hover {
+  color: #ffffff;
+}
+
+/*# sourceMappingURL=style.css.map */
