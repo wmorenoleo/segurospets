@@ -1,3 +1,5 @@
+@use 'bajos';
+
 :root {
     font-size: 18px;
 }
@@ -293,4 +295,36 @@ body {
     strong {
         font-weight: $bold;
     }
+}
+
+.recuadros {
+    background-image:url(../images/200317-229-rappi-bienvenida-mascotas-fondocurvo.png);
+    background-size: 100% 300px;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+.box--recuadros {
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.recuadro-item {
+    background-color:$blanco;
+    border: 1px solid #eaeaea;
+    border-radius: 7px;
+    box-shadow: 9px 9px 8px -4px rgba(0,0,0,0.12);
+    padding: 1.2rem;
+    margin-top: 10px;
+    height: 280px;
+    color: $gris;
+    font-weight: $regular;
+    font-size: 1rem;
+    img {
+        margin-bottom: 1rem;
+    }
+}
+
+.tabs-pets {
 }
