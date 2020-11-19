@@ -600,13 +600,14 @@ body {
   box-shadow: 9px 9px 8px -4px rgba(0, 0, 0, 0.12);
   padding: 1.2rem;
   margin-top: 10px;
-  height: 280px;
+  height: 320px;
   color: #5F6060;
   font-weight: 400;
   font-size: 1rem;
 }
 .recuadro-item img {
   margin-bottom: 1rem;
+  width: 80px;
 }
 
 /* Recuadro verde */
@@ -651,6 +652,19 @@ h2.titulo-seccion-verde {
 
 .text-verde {
   color: #016d38;
+}
+
+.btn-whatsapp {
+  margin: 2rem 2rem;
+}
+.btn-whatsapp a {
+  width: 10rem;
+  background-color: #FFDC5D;
+  border-radius: 15px;
+  padding: 0.5rem 2rem;
+  color: #016d38;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
 /*# sourceMappingURL=style.css.map */

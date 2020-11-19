@@ -327,12 +327,13 @@ body {
     box-shadow: 9px 9px 8px -4px rgba(0,0,0,0.12);
     padding: 1.2rem;
     margin-top: 10px;
-    height: 280px;
+    height: 320px;
     color: $gris;
     font-weight: $regular;
     font-size: 1rem;
     img {
         margin-bottom: 1rem;
+        width: 80px;
     }
 }
 
@@ -380,6 +381,16 @@ h2.titulo-seccion-verde {
     color: $verde;
 }
 
-@media (min-width: 300px) {
-    
+.btn-whatsapp {
+    margin: 2rem 2rem;
+    a {
+        width: 10rem;
+        background-color: $amarillo;
+        border-radius: 15px;
+        padding: .5rem 2rem;
+        color: $verde;
+        font-weight: $bold;
+        text-transform: uppercase;
+    }
 }
+
