@@ -1,5 +1,21 @@
 @charset "UTF-8";
 /*Generales*/
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #686868;
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+}
+
 #headerHero {
   background-image: url(../images/200317-229-rappi-bienvenida-mascotas-headergold.png);
   background-size: cover;
@@ -7,14 +23,6 @@
   background-position: center center;
   height: 150px;
   max-height: 500px;
-}
-
-.legal-header {
-  position: absolute;
-  right: 0;
-  top: 115px;
-  width: 100%;
-  margin-right: 8px;
 }
 
 .img-centrado-general {
@@ -80,95 +88,6 @@ h1 {
   font-weight: 800;
 }
 
-/*FIN Texto lead*/
-/*INICIO recuadro gris*/
-h2 {
-  text-align: center;
-  font-size: 1.2rem;
-  color: #016d38;
-}
-
-#bg-recuadros-gris {
-  background-image: url(../images/200317-229-rappi-bienvenida-mascotas-bg-iconos.png);
-  background-size: auto;
-  background-repeat: repeat;
-  background-position: center center;
-}
-
-#bg-recuadros-curvo {
-  background-image: url(../images/200317-229-rappi-bienvenida-mascotas-fondocurvo.png);
-  background-size: 100% 200px;
-  background-repeat: no-repeat;
-  background-position: top center;
-}
-
-.cards-gris {
-  background-color: #ffffff;
-  border: 1px solid #eaeaea;
-  border-radius: 7px 7px 7px 7px;
-  -moz-border-radius: 7px 7px 7px 7px;
-  -webkit-border-radius: 7px 7px 7px 7px;
-  -webkit-box-shadow: 9px 9px 8px -4px rgba(0, 0, 0, 0.12);
-  -moz-box-shadow: 9px 9px 8px -4px rgba(0, 0, 0, 0.12);
-  box-shadow: 9px 9px 8px -4px rgba(0, 0, 0, 0.12);
-  text-align: center;
-  padding: 20px;
-  margin-top: 30px;
-  height: 288px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.card-body-estilos {
-  font-style: italic;
-}
-
-/*Acordeon*/
-div.card-body-estilos ul.huesos {
-  list-style-image: url("../images/200317-229-rappi-bienvenida-mascotas-bulletshueso.png");
-}
-
-.card-header {
-  background-color: #016d38;
-}
-
-.btn-link {
-  color: #f7f7f7;
-  font-size: 1.3rem;
-}
-
-/*FIN recuadro gris*/
-/*INICIO verde*/
-#bg-verde {
-  background-image: url(../images/200317-229-rappi-bienvenida-mascotas-seccioverde.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: -410px center;
-}
-
-h2.titulo-seccion-verde {
-  font-size: 2rem;
-  color: #ffdc5d;
-  padding: 20px 20px 5px;
-  font-style: italic;
-  font-weight: 600;
-}
-
-.numero-grande {
-  font-size: 3rem;
-  font-style: italic;
-  color: #ffffff;
-  text-align: center;
-  margin-top: -13px;
-}
-
-.numero-grande:hover {
-  color: #ffdc5d;
-}
-
-/*FIN verde*/
 /*---------------------------Estrellas--------------------------------*/
 .califique {
   font-size: 20px;
@@ -185,7 +104,7 @@ h2.titulo-seccion-verde {
 }
 
 .ec-stars-wrapper {
-  /* Espacio entre los inline-block (los hijos, los `a`) http://ksesocss.blogspot.com/2012/03/display-inline-block-y-sus-empeno-en.html */
+  /* Espacio entre los inline-block (los hijos, los `a`) http:ksesocss.blogspot.com/2012/03/display-inline-block-y-sus-empeno-en.html */
   font-size: 20;
   /* PodrÃ­amos quitarlo, pero de esta manera (siempre que no le demos padding), solo aplicara la regla .ec-stars-wrapper:hover a cuando también se está haciendo hover a alguna estrella */
   display: inline-block;
@@ -221,15 +140,14 @@ h2.titulo-seccion-verde {
   margin-bottom: 30px;
 }
 
-/*--------------Fin Estrellas------------------*/
+/*--------------Fin Estrellas------------------ */
 /*bg estrellas*/
-#bg-estrellas {
-  background-image: url(../images/200317-229-rappi-bienvenida-mascotas-huellasfooter.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top center;
-}
-
+/* #bg-estrellas {
+    background-image: url(../images/200317-229-rappi-bienvenida-mascotas-huellasfooter.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+} */
 /*vigilado*/
 .vigilado {
   position: absolute;
@@ -348,7 +266,7 @@ h2.titulo-seccion-verde {
   }
 
   .seccion-verde {
-    height: 180px;
+    padding: 1rem;
   }
 }
 @media (min-width: 992px) {
@@ -454,7 +372,7 @@ body {
 }
 
 .master--view {
-  background-image: url(/images/fondo.svg);
+  background-image: url(images/fondo.svg);
   background-repeat: repeat;
   background-size: 566px 426px;
 }
@@ -464,6 +382,14 @@ body {
 }
 .header img {
   width: 150px;
+}
+
+.legal-header {
+  position: absolute;
+  right: 0;
+  top: 200px;
+  width: 100%;
+  margin-right: 8px;
 }
 
 .slider--img img {
@@ -681,6 +607,50 @@ body {
 }
 .recuadro-item img {
   margin-bottom: 1rem;
+}
+
+/* Recuadro verde */
+#bg-verde {
+  padding: 1.2rem;
+  background-image: url(../images/200317-229-rappi-bienvenida-mascotas-seccioverde.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+h2.titulo-seccion-verde {
+  font-size: 2rem;
+  color: #ffdc5d;
+  padding: 20px 20px 5px;
+  font-style: italic;
+  font-weight: 600;
+}
+
+.numero-grande {
+  font-size: 3rem;
+  font-style: italic;
+  color: #ffffff;
+  text-align: center;
+  margin-top: -5px;
+}
+
+.numero-grande:hover {
+  color: #ffdc5d;
+  text-decoration: none;
+}
+
+/* Recuadro verde */
+/* Botones Tabs Perro Gato */
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #016d38;
+}
+
+.nav-item a {
+  color: #016d38;
+}
+
+.text-verde {
+  color: #016d38;
 }
 
 /*# sourceMappingURL=style.css.map */

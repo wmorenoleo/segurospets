@@ -9,6 +9,7 @@ $verde: #016d38;
 $amarillo: #FFDC5D;
 $cont-amarillo: #716122;
 $gris: #5F6060;
+$grisClaro: #eaeaea;
 $blanco: #ffffff;
 //---------- Fuentes ---------
 $h1: 2.8rem;
@@ -90,7 +91,7 @@ body {
 
 // Master View
 .master--view {
-    background-image: url(/images/fondo.svg);
+    background-image: url(images/fondo.svg);
     background-repeat: repeat;
     background-size: 566px 426px;
 }
@@ -101,6 +102,15 @@ body {
         width: 150px;
     }
 }
+
+.legal-header {
+    position: absolute;
+    right: 0;
+    top: 200px;
+    width: 100%;
+    margin-right: 8px;
+}
+
 //Slider
 .slider--img {
     img {
@@ -326,5 +336,50 @@ body {
     }
 }
 
-.tabs-pets {
+/* Recuadro verde */
+#bg-verde {
+    padding: 1.2rem;
+    background-image: url(../images/200317-229-rappi-bienvenida-mascotas-seccioverde.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h2.titulo-seccion-verde {
+    font-size: 2rem;
+    color: #ffdc5d;
+    padding: 20px 20px 5px;
+    font-style: italic;
+    font-weight: 600;
+}
+
+.numero-grande {
+    font-size: 3rem;
+    font-style: italic;
+    color: #ffffff;
+    text-align: center;
+    margin-top: -5px;
+}
+
+.numero-grande:hover {
+    color: #ffdc5d;
+    text-decoration: none;
+}
+/* Recuadro verde */
+
+/* Botones Tabs Perro Gato */
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: #fff;
+    background-color: $verde;
+}
+
+.nav-item a {
+    color: $verde;
+}
+
+.text-verde {
+    color: $verde;
+}
+
+@media (min-width: 300px) {
+    
 }
