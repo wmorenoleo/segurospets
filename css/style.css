@@ -8,6 +8,11 @@ html {
 
 body {
   font-family: "Roboto Condensed", sans-serif;
+  font-size: 1.125rem;
+}
+
+.bfix {
+  border: 1px solid red;
 }
 
 .h2 {
@@ -34,11 +39,15 @@ body {
 }
 
 .amarillo {
-  color: #EFB810;
+  color: #FFDC5D;
 }
 
 .gris {
-  color: #686868;
+  color: #5F6060;
+}
+
+.blanco {
+  color: #ffffff;
 }
 
 .bg-verde {
@@ -46,7 +55,11 @@ body {
 }
 
 .bg-amarillo {
-  background-color: #EFB810;
+  background-color: #FFDC5D;
+}
+
+.bg-blanco {
+  background-color: #ffffff;
 }
 
 .gap-1 {
@@ -62,12 +75,19 @@ body {
 .header {
   padding: 1.5rem;
 }
+.header img {
+  width: 150px;
+}
+
+.slider--img img {
+  width: 100%;
+}
 
 .slider-text {
   text-align: center;
 }
 .slider-text h1 {
-  color: #686868;
+  color: #5F6060;
   font-size: 2.8rem;
   font-weight: 300;
 }
@@ -77,39 +97,109 @@ body {
   font-size: 3.1rem;
 }
 .slider-text h1 strong::before {
-  content: url(/images/hueso.png) url(/images/hueso.png) url(/images/hueso.png);
+  content: url(/images/huellas.png);
   position: relative;
-  top: -7px;
+  top: 8px;
   margin-right: 11px;
 }
 .slider-text h1 strong::after {
-  content: url(/images/hueso.png) url(/images/hueso.png) url(/images/hueso.png);
+  content: url(/images/huellas.png);
   position: relative;
-  top: -7px;
+  top: 8px;
   margin-left: 11px;
 }
 .slider-text h1 span {
-  color: #EFB810;
+  color: #FFDC5D;
 }
 .slider-text hr {
   border-top: 1px solid #016d38;
-  width: 43rem;
+  width: 80%;
 }
 .slider-text p {
-  color: #686868;
+  color: #5F6060;
 }
 .slider-text p span {
   font-weight: 600;
 }
 
-.slider--img img {
-  width: 100%;
+.legal {
+  color: #5F6060;
+  font-size: 12px;
+  position: absolute;
+  transform: rotate(90deg);
+  right: -50px;
+  top: 10%;
 }
 
-.box {
-  padding: 2rem 0rem;
-  display: flex;
-  align-items: center;
+.bg-image1 {
+  background: url(/images/background1.png);
+}
+
+.bg-image2 {
+  background: url(/images/background2.png);
+}
+
+.bg-image3 {
+  background: url(/images/background3.png);
+}
+
+.bg-image4 {
+  background: url(/images/huellasbg.svg);
+}
+
+.bg-image5 {
+  background: url(/images/backgris.png);
+}
+
+.background {
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 1.5rem;
+}
+.background p {
+  margin: 0;
+}
+
+.carousell {
+  padding: 1.5rem 1rem;
+}
+.carousell p {
+  margin: 0;
+  color: #5F6060;
+}
+
+.carrousell-indicators {
+  position: initial;
+}
+
+.carrousell-text {
+  position: initial;
+}
+
+.carousel-control-next, .carousel-control-prev {
+  opacity: 1;
+}
+
+.carousel-control-prev-icon {
+  background-image: url(/images/arrowleft.svg);
+}
+
+.carousel-control-next-icon {
+  background-image: url(/images/arrowright.svg);
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.carousel-indicators li {
+  background-color: #5F6060;
+  opacity: 0.2;
+}
+
+.carousel-indicators .active {
+  background-color: #016d38;
 }
 
 .box--text {
@@ -123,21 +213,58 @@ body {
 
 .franja-boton {
   display: flex;
-  justify-content: center;
+  padding: 1.5rem;
+  border-radius: 10px;
+  justify-content: space-between;
   align-items: center;
-  gap: 5rem;
+}
+.franja-boton img {
+  width: 55px;
+}
+.franja-boton a {
+  border: 1px solid #716122;
+  border-radius: 23px;
+  padding: 0.8rem;
+  color: #716122;
+  font-weight: 600;
+  font-size: 1.125rem;
 }
 
-.card-icon {
-  width: 228px;
-  text-align: center;
-  background-color: #ffffff;
-  padding: 1rem 2rem;
-  border-radius: 11px;
-  box-shadow: 3px 3px 3px #5959594D;
+.hr-amarillo {
+  border-top: 1px solid #FFDC5D;
 }
-.card-icon p {
-  margin: 0;
+
+.ct3-item {
+  padding: 1rem 2rem;
+}
+
+.content {
+  padding: 2.5rem;
+}
+
+.header-acordeon {
+  background-color: #FFDC5D;
+  font-size: 1.25rem;
+  font-weight: 600;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+}
+.header-acordeon a {
+  color: #016d38;
+  text-decoration: none;
+}
+.header-acordeon img {
+  width: 1.2rem;
+}
+
+.acordeon-content p {
+  padding: 1.2rem;
+  font-weight: 300;
+}
+.acordeon-content strong {
+  font-weight: 600;
 }
 
 /*# sourceMappingURL=style.css.map */

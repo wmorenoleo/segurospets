@@ -4,9 +4,9 @@
 
 //-------Colores---------
 $verde: #016d38;
-$amarillo: #EFB810;
+$amarillo: #FFDC5D;
 $cont-amarillo: #716122;
-$gris: #686868;
+$gris: #5F6060;
 $blanco: #ffffff;
 //---------- Fuentes ---------
 $h1: 2.8rem;
@@ -25,7 +25,12 @@ html {
 
 body {
     font-family: "Roboto Condensed", sans-serif;
+    font-size: $text;
     }
+
+.bfix {
+    border: 1px solid red;
+}
 
 // ------- Headers Sizes
 .h2 {
@@ -59,6 +64,10 @@ body {
     color: $gris;
 }
 
+.blanco {
+    color: $blanco;
+}
+
 // ------- Colores Background
 .bg-verde {
     background-color: $verde;
@@ -66,6 +75,10 @@ body {
 
 .bg-amarillo {
     background-color: $amarillo;
+}
+
+.bg-blanco {
+    background-color: $blanco;
 }
 
 // ------- Gaps 
@@ -82,8 +95,18 @@ body {
 // Header
 .header {
     padding: 1.5rem;
+    img {
+        width: 150px;
+    }
 }
 //Slider
+.slider--img {
+    img {
+        width: 100%;
+    }
+    
+}
+
 .slider-text {
     text-align: center;
     h1 {
@@ -96,15 +119,15 @@ body {
             font-weight: 700;
             font-size: ($h1 + 0.3);
             &::before{
-                content:url(/images/hueso.png) url(/images/hueso.png) url(/images/hueso.png);
+                content:url(/images/huellas.png);
                 position: relative;
-                top: -7px;
+                top: 8px;
                 margin-right: 11px ;
             }
             &::after{
-                content: url(/images/hueso.png) url(/images/hueso.png) url(/images/hueso.png);
+                content: url(/images/huellas.png);
                 position: relative;
-                top: -7px;
+                top: 8px;
                 margin-left: 11px;
             }
         }
@@ -114,29 +137,96 @@ body {
     }
     hr{
         border-top: 1px solid $verde;
-        width: 43rem;
+        width: 80%;
     }
     p{
         color: $gris;
         span{
             font-weight: $bold;
         }
+    }   
+}
+
+.legal {
+    color: $gris;
+    font-size: 12px;
+    position: absolute;
+    transform: rotate(90deg);
+    right: -50px;
+    top: 10%;
+}
+
+.bg-image1 {
+    background: url(/images/background1.png);
+}
+
+.bg-image2 {
+    background: url(/images/background2.png);
+}
+
+.bg-image3 {
+    background: url(/images/background3.png);
+}
+
+.bg-image4 {
+    background: url(/images/huellasbg.svg);
+}
+
+.bg-image5 {
+    background: url(/images/backgris.png);
+}
+
+.background {
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 1.5rem;
+    p { 
+        margin: 0;
     }
 }
 
-.slider--img {
-    img {
-        width: 100%;
+.carousell {
+    padding: 1.5rem 1rem;
+    p{
+        margin: 0;
+        color: $gris;
     }
-    
 }
 
-//Content 1
-.box {
-    padding: 2rem 0rem;
-    display: flex;
-    align-items: center;
+.carrousell-indicators {
+    position: initial;
 }
+
+.carrousell-text {
+    position: initial;
+}
+
+.carousel-control-next, .carousel-control-prev {
+    opacity: 1;
+}
+
+.carousel-control-prev-icon {
+    background-image: url(/images/arrowleft.svg);
+}
+
+.carousel-control-next-icon {
+    background-image: url(/images/arrowright.svg);
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.carousel-indicators li {
+    background-color: $gris;
+    opacity: .2;    
+}
+
+.carousel-indicators .active {
+    background-color: $verde;
+}
+
 
 .box--text {
     color: $blanco;
@@ -149,19 +239,58 @@ body {
 
 .franja-boton{
     display: flex;
-    justify-content: center;
+    padding: 1.5rem;
+    border-radius: 10px;
+    justify-content: space-between;
     align-items: center;
-    gap: 5rem;
+    img {
+        width: 55px;
+    }
+    a {
+        border: 1px solid $cont-amarillo;
+        border-radius: 23px;
+        padding: .8rem;
+        color: $cont-amarillo;
+        font-weight: $bold;
+        font-size: $text;
+    }
 }
 
-.card-icon {
-    width: 228px;
-    text-align: center;
-    background-color: $blanco;
+.hr-amarillo {
+    border-top: 1px solid $amarillo;
+}
+
+.ct3-item {
     padding: 1rem 2rem;
-    border-radius: 11px;
-    box-shadow: 3px 3px 3px #5959594D;
+}
+
+.content {
+    padding: 2.5rem;
+}
+
+.header-acordeon {
+    background-color: $amarillo;
+    font-size: $h3;
+    font-weight: $bold;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    margin-top: .5rem;
+    a {
+        color: $verde;
+        text-decoration: none;
+    }
+    img{
+        width: 1.2rem;
+    }
+}
+
+.acordeon-content {
     p {
-        margin: 0;
+        padding: 1.2rem;
+        font-weight: $light;
+    }
+    strong {
+        font-weight: $bold;
     }
 }
